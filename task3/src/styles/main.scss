@@ -1,0 +1,76 @@
+.main {
+
+	padding: 20px;
+    background-color: #eee;
+
+    @mixin border-style {
+        border: 2px solid #000;
+        border-radius: 10px;
+    }
+
+    .middle {
+		width: 100%;
+
+		.content {
+			float: left;
+			@include border-style;
+	        margin: 0 140px 0 220px;
+	        font: 16px/1.5 OpenSans-Light, Tahoma, Helvetica, Arial, sans-serif;
+		}
+
+		@media screen and (max-width: 540px) {
+        	width: 468px;
+        }
+	}
+
+	.left {
+		@include border-style;
+		float: left;
+        width: 196px;
+        margin-left: -100%;
+
+        @media screen and (max-width: 540px) {
+        	margin-left: -468px;
+        }
+
+		img {
+			width: 80px;
+			height: 80px;
+		}
+
+		p {
+            float: right;
+            margin: 28px 6px 28px;
+            font: 24px/1 OpenSans-Light, Tahoma, Helvetica, Arial, sans-serif;
+        }
+	}
+
+	
+
+	.right {
+
+        @include border-style;
+        float: left;
+        width: 76px;
+        padding: 20px;
+		margin-left: -120px;
+
+		@media screen and (max-width: 540px) {
+        	display: none;
+        }
+
+		img {
+
+            display: block;
+            width: 80px;
+            height: 80px;
+
+            margin-top: 20px;
+
+            &:first-of-type {
+            	margin-top: 0;
+            }
+		}
+
+	}
+}
