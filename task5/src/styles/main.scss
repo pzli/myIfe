@@ -1,0 +1,260 @@
+
+@mixin font {
+	text-align: center;
+	color: #fff;
+	font-weight: 700;
+}
+
+.header {
+	width: 100%;
+	background-color: #222;
+	height: 60px;
+
+	img {
+		width: 150px;
+		height: 60px;
+		margin-left: 40px;
+	}
+
+	ul {
+		float: right;
+
+		li {
+			display: block;
+			width: 50px;
+			height: 60px;
+			float: left;
+			
+			a {
+				@include font;
+				font-size: 12px;
+				line-height: 60px;
+			}
+
+
+		}
+
+		@media screen and (max-width:356px) {
+			li {
+				display: none;
+			}
+		}
+	}
+
+
+}
+
+@mixin box-style {
+    margin: 20px 0 20px;
+    padding: 40px 20px 20px;
+    box-shadow: 2px 2px 5px #848484;
+    background: #fff;
+}
+
+.main {
+	overflow: hidden;
+	background-color: #eee;
+	.main-wrap {
+
+		width: 100%;
+		.article-wrap {
+			float: left;
+			margin-right: 440px;
+			margin-left: 20px;
+
+			article {
+				float: left;
+				@include box-style;
+
+				> * {
+					margin-bottom: 20px;
+				}
+
+				img {
+					display: block;
+	                width: 300px;
+	                height: 250px;
+				}
+				h1 {
+					font-size: 20px;
+				}
+
+				h3 {
+					font-size: 16px;
+                    color: #222;
+                }
+                h4 {
+					font-size: 12px;
+					color: #333;
+                }
+
+                p {
+					font-size: 16px;
+                    text-indent: 2em;
+                    line-height: 24px;
+                }
+			}
+
+			.pictures {	
+				@include box-style;
+
+				.pictures-wrap {
+					padding-top: 20px;
+
+					figure {
+
+                        display: inline-block;
+                        width: 100px;
+                        height: 124px;
+                        margin: 10px;
+                        padding: 12px 10px 10px;
+                        border: 1px solid #cdcdcd;
+
+
+                        figcaption {
+							font-size: 12px;
+                            text-align: center;
+                        }
+
+						img {
+							margin-top: 20px;
+							display: block;
+							width: 100px;
+							height: 80px;
+						}
+					}
+				}
+
+			
+			}
+
+		}
+
+
+
+		
+	}
+
+	.aside {
+
+		float: left;
+		width: 360px;
+		margin-top: 20px;
+		margin-left: -420px;
+		padding: 20px;
+		box-shadow: 2px 2px 5px #848484;
+    	background: #fff;
+
+		h1 {
+			padding: 10px;
+			border-left: 3px solid #e0e0e0; 
+		}
+		form {
+			> * {
+			margin-top: 20px;
+
+			}
+			fieldset {
+                position: relative;
+                height: 24px;
+                margin-top: 12px;
+
+                .email,.password {
+                	position: relative;
+                }
+
+                label,input,p,select,span,textarea {
+                	position: absolute;
+
+                }
+
+                label,span {
+                	right: 270px;
+                	top: 2px;
+                }
+                input,select,textarea {
+                	left: 110px;
+                }
+
+                p {
+                	bottom: 2px;
+                	left: 110px;
+                	color: #aaa;
+                }
+
+
+            }
+
+            .email,.password-confirm {
+            	height: 40px;
+            }
+
+            .sex {
+            	label:first-of-type {
+            		top: -1px;
+            		left: 130px;
+            	}
+            	input:nth-of-type(2) {
+					left: 150px;
+            	}
+            	label:nth-of-type(2) {
+            		top: -1px;
+            		left: 170px;
+            	}
+            }
+			.hobby {
+				label:first-of-type {
+            		top: -1px;
+            		left: 125px;
+            		width: 24px;
+            	}
+            	input:nth-of-type(2) {
+					left: 160px;
+            	}
+            	label:nth-of-type(2) {
+            		top: -1px;
+            		left: 175px;
+            		width: 24px;
+            	}
+            	input:nth-of-type(3) {
+					left: 210px;
+            	}
+            	label:nth-of-type(3) {
+            		top: -1px;
+            		left: 225px;
+            		width: 24px;
+            	}
+			}
+
+			.description {
+				height: 100px;
+				textarea {
+					width: 200px;
+					height: 100px;
+					resize: none;
+				}
+			}
+
+            #submit {
+                width: 100%;
+                height: 40px;
+                margin-top: 12px;
+                border-radius: 10px;
+                color: #fff;
+                background: #3355d0;
+            }
+		}
+		
+	}
+}
+
+.footer {
+	width: 100%;
+	background-color: #222;
+	height: 60px;
+
+	line-height: 60px;
+	@include font;
+	font-size: 14px;
+	
+}
