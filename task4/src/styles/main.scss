@@ -1,0 +1,38 @@
+
+@mixin demo-styles {
+	width: 200px;
+	height: 200px;
+	border-radius: 100px;
+	background-color: #eb0;
+	position: absolute;
+
+}
+
+#wrap {
+	background-color: #666;
+	width: 400px;
+	height: 400px;
+	/* 如果是relative,只能水平居中,不能垂直剧中 */
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	
+	margin-top: -200px;
+	margin-left: -200px;
+
+	overflow: hidden;
+
+	
+	#demo1 {
+		@include demo-styles;
+		top: -100px;
+		left: -100px;
+	}
+
+	#demo2 {
+		
+		@include demo-styles;
+		right: -100px;
+		bottom: -100px;
+	}
+}
