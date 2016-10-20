@@ -1,0 +1,485 @@
+body {
+  height: 1386px;
+}
+body header {
+  width: 980px;
+}
+body header .header-wrap {
+  width: 892px;
+  margin: auto;
+  height: 61px;
+}
+body header .header-wrap .logo {
+  width: 110px;
+  height: 61px;
+  background-color: #d45d5c;
+  position: relative;
+  float: left;
+}
+body header .header-wrap .logo p {
+  color: #fff;
+  position: absolute;
+  bottom: 5px;
+  margin-left: 6px;
+  font: 12px/1 "\9ed1\4f53";
+}
+body header .header-wrap .date {
+  float: right;
+  color: #d45d5c;
+  margin-top: 45px;
+  font: 12px/1 "\9ed1\4f53";
+}
+body header .line {
+  width: 892px;
+  height: 2px;
+  margin: auto;
+  background-color: #938e8c;
+}
+body main {
+  width: 980px;
+  height: 1260px;
+}
+body main .main-top {
+  margin: 33px 44px;
+}
+body main .main-top .top-container {
+  float: left;
+}
+body main .main-top .top-container figure {
+  width: 641px;
+  height: 301px;
+  position: relative;
+}
+body main .main-top .top-container figure img {
+  width: 641px;
+  height: 301px;
+  float: left;
+}
+body main .main-top .top-container figure div {
+  position: absolute;
+  width: 191px;
+  height: 301px;
+}
+body main .main-top .top-container figure div:first-of-type {
+  left: 0;
+  background: rgba(66, 140, 89, 0.5);
+}
+body main .main-top .top-container figure div:last-of-type {
+  right: 0;
+  background: rgba(204, 118, 128, 0.5);
+}
+body main .main-top .top-container article {
+  margin-top: 40px;
+  position: relative;
+}
+body main .main-top .top-container article section {
+  float: left;
+}
+body main .main-top .top-container article section:first-of-type {
+  width: 230px;
+}
+body main .main-top .top-container article section:first-of-type h5 {
+  font: bold 16px "microsoft yahei";
+  color: #418c59;
+  text-decoration: underline;
+}
+body main .main-top .top-container article section:nth-of-type(2) {
+  width: 200px;
+  margin-left: 25px;
+}
+body main .main-top .top-container article section:nth-of-type(2) h5 {
+  font: bold 16px "microsoft yahei";
+  color: #d2994f;
+  text-decoration: underline;
+}
+body main .main-top .top-container article section:nth-of-type(3) {
+  width: 130px;
+  margin-left: 25px;
+}
+body main .main-top .top-container article section:nth-of-type(3) h5 {
+  font: bold 16px "microsoft yahei";
+  color: #cc7680;
+  text-decoration: underline;
+}
+body main .main-top .top-container article section p {
+  margin-top: 10px;
+  color: #777;
+  font: 12px "SimSun";
+  line-height: 16px;
+}
+body main .main-top .top-container article ul {
+  position: absolute;
+  top: 110px;
+  right: 65px;
+}
+body main .main-top .top-container article ul li span {
+  font: 12px "Microsoft YaHei";
+  line-height: 16px;
+}
+body main .main-top .top-container article ul li span:first-of-type {
+  color: rgba(35, 24, 21, 0.7);
+}
+body main .main-top .top-container article ul li span:last-of-type {
+  font-style: italic;
+  color: rgba(205, 74, 72, 0.7);
+}
+body main .main-top aside {
+  float: left;
+  margin-left: 48px;
+  width: 203px;
+}
+body main .main-top aside .line {
+  width: 203px;
+  height: 2px;
+  background-color: #cc8081;
+  margin-bottom: 10px;
+}
+body main .main-top aside h4 {
+  font: small-caps 24px "Microsoft YaHei";
+  text-decoration: underline;
+  line-height: 40px;
+  color: #000;
+}
+body main .main-top aside p {
+  margin-top: 7px;
+  font: italic 12px "kaiti";
+  line-height: 10px;
+  color: #676767;
+}
+body main .main-top aside .aside-wrap {
+  margin-top: 33px;
+}
+body main .main-top aside .aside-wrap span:nth-of-type(1) {
+  float: left;
+  margin-left: -28px;
+  font: italic 700 116px/1 "Microsoft YaHei";
+  color: #75b86b;
+}
+body main .main-top aside .aside-wrap span:nth-of-type(2) {
+  float: left;
+  margin: 11px 0 0 7px;
+  font: 55px/1 "Microsoft YaHei";
+  color: #cc8091;
+}
+body main .main-top aside .aside-wrap span:nth-of-type(3) {
+  float: left;
+  margin: 34px 0 0 7px;
+  font: 18px/1 "Microsoft YaHei";
+  color: #cc8091;
+}
+body main .main-top aside .aside-wrap span:nth-of-type(4) {
+  float: left;
+  margin-left: 5px;
+  font: 8px/1 "Microsoft YaHei";
+  color: #bbb;
+}
+body main .main-bottom {
+  margin: 44px;
+}
+body main .main-bottom .bottom-left {
+  float: left;
+  width: 415px;
+  margin-top: 75px;
+}
+body main .main-bottom .bottom-left h2 {
+  font: 700 42px "SimHei";
+  line-height: 42px;
+  color: #11456b;
+}
+body main .main-bottom .bottom-left h2 span {
+  font: 700 italic 72px "SimHei";
+  line-height: 42px;
+  color: #f5e327;
+}
+body main .main-bottom .bottom-left h3 {
+  font: 700 33px "SimHei";
+  line-height: 33px;
+  color: #11456b;
+  margin-bottom: 18px;
+}
+body main .main-bottom .bottom-left .line {
+  width: 415px;
+  height: 2px;
+  background-color: #11456b;
+  margin-bottom: 22px;
+}
+body main .main-bottom .bottom-left article span {
+  font: 70px/1 "microsoft yahei";
+  color: #f5e327;
+  float: left;
+  margin: -3px 8px 8px -5px;
+}
+body main .main-bottom .bottom-left article p {
+  font: 12px "simsun";
+  line-height: 16px;
+  color: #777;
+  text-indent: 2em;
+}
+body main .main-bottom .bottom-left article p:first-of-type {
+  text-indent: 0;
+}
+body main .main-bottom .bottom-left article p img {
+  float: right;
+  margin: 20px 7px 20px 24px;
+}
+body main .main-bottom .bottom-right {
+  float: right;
+  width: 458px;
+  margin-top: 75px;
+}
+body main .main-bottom .bottom-right figure {
+  height: 257px;
+  position: relative;
+}
+body main .main-bottom .bottom-right figure img {
+  width: 100%;
+  height: 100%;
+}
+body main .main-bottom .bottom-right figure figcaption {
+  position: absolute;
+  height: 61px;
+  width: 458px;
+  bottom: 0;
+  left: 0;
+  background: rgba(17, 17, 17, 0.5);
+}
+body main .main-bottom .bottom-right figure figcaption h3 {
+  float: left;
+  display: inline-block;
+  width: 120px;
+  height: 26px;
+  margin-left: 38px;
+  border-left: 3px solid #72b16a;
+  text-align: center;
+  font: 26px/1 "Microsoft YaHei";
+  color: #fff;
+  padding: 9px 6px;
+  margin-top: 8px;
+}
+body main .main-bottom .bottom-right figure figcaption h4 {
+  float: left;
+  padding-top: 32px;
+  display: inline-block;
+  font: italic 16px/1 "Microsoft YaHei";
+  color: #72b16a;
+}
+body main .main-bottom .bottom-right .list {
+  margin-top: 32px;
+  background: #eeedd6;
+  height: 288px;
+  width: 407px;
+  padding: 30px 20px 0 32px;
+  position: relative;
+}
+body main .main-bottom .bottom-right .list ul li {
+  font: 16px "simsun";
+  line-height: 20px;
+  color: #5a5b5b;
+}
+body main .main-bottom .bottom-right .list ul li span:first-of-type {
+  color: #12456b;
+  margin-right: 6px;
+  font: 12px/1 "microsoft yahei";
+}
+body main .main-bottom .bottom-right .list ul li span:last-of-type {
+  color: #5a5b5b;
+  font: italic 12px "simsun";
+  line-height: 20px;
+}
+body main .main-bottom .bottom-right .list > div {
+  position: absolute;
+  width: 260px;
+  height: 160px;
+  left: 0;
+  bottom: 0;
+  background-color: #d45d5c;
+}
+body main .main-bottom .bottom-right .list > div div:first-of-type {
+  width: 70px;
+  height: 86px;
+  margin: 37px 8px;
+  float: left;
+  color: #fff;
+  font: 110px "microsoft yahei";
+  line-height: 86px;
+  border-right: 2px solid #fff;
+}
+body main .main-bottom .bottom-right .list > div div:last-of-type {
+  height: 86px;
+  margin: 37px 0;
+}
+body main .main-bottom .bottom-right .list > div div:last-of-type h5 {
+  color: #fff;
+  font: italic 21px "simhei";
+  line-height: 24px;
+}
+body main .main-bottom .bottom-right .list > div div:last-of-type p {
+  margin-top: 5px;
+  color: #fff;
+  font: 12px "simhei";
+}
+body main .main-bottom .bottom-right .list > p {
+  position: absolute;
+  width: 177px;
+  height: 150px;
+  right: 0;
+  bottom: 0;
+  padding: 10px 5px 0 17px;
+  color: #5a5b5b;
+  font: italic 14px "simhei";
+  line-height: 16px;
+  text-indent: 3em;
+}
+body main .main-bottom .bottom-right .list > p span {
+  position: absolute;
+  color: #d45d5c;
+  font: 72px "simhei";
+  line-height: 16px;
+}
+body main .main-bottom .bottom-right .list > p span:first-of-type {
+  top: 27px;
+  left: -65px;
+}
+body main .main-bottom .bottom-right .list > p span:last-of-type {
+  top: 117px;
+  left: 104px;
+}
+body footer {
+  width: 980px;
+}
+body footer .line {
+  width: 892px;
+  height: 1px;
+  background-color: #938e8c;
+  margin: 0 auto;
+}
+body footer .footer-wrap {
+  height: 61px;
+  width: 892px;
+  margin: 0 auto;
+  position: relative;
+}
+body footer .footer-wrap p {
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: #d45d5c;
+  font: 12px "simhei";
+}
+
+@charset "UTF-8";
+/*
+KISSY CSS Reset
+理念：清除和重置是紧密不可分的
+特色：1.适应中文 2.基于最新主流浏览器
+维护：玉伯(lifesinger@gmail.com), 正淳(ragecarrier@gmail.com)
+*/
+/* 清除内外边距 */
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, figure,
+dl, dt, dd, ul, ol, li,
+pre,
+fieldset, legend, button, input, textarea,
+th, td {
+  /* table elements 表格元素 */
+  margin: 0;
+  padding: 0;
+}
+
+/* 设置默认字体 */
+body,
+button, input, select, textarea {
+  /* for ie */
+  /*font: 12px/1 Tahoma, Helvetica, Arial, "宋体", sans-serif;*/
+  font: 12px/1 Tahoma, Helvetica, Arial, "\5b8b\4f53", sans-serif;
+  /* 用 ascii 字符表示，使得在任何编码下都无问题 */
+}
+
+h1 {
+  font-size: 18px;
+  /* 18px / 12px = 1.5 */
+}
+
+h2 {
+  font-size: 16px;
+}
+
+h3 {
+  font-size: 14px;
+}
+
+h4, h5, h6 {
+  font-size: 100%;
+}
+
+address, cite, dfn, em, var {
+  font-style: normal;
+}
+
+/* 将斜体扶正 */
+code, kbd, pre, samp, tt {
+  font-family: "Courier New", Courier, monospace;
+}
+
+/* 统一等宽字体 */
+small {
+  font-size: 12px;
+}
+
+/* 小于 12px 的中文很难阅读，让 small 正常化 */
+/* 重置列表元素 */
+ul, ol {
+  list-style: none;
+}
+
+/* 重置文本格式元素 */
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+abbr[title], acronym[title] {
+  /* 注：1.ie6 不支持 abbr; 2.这里用了属性选择符，ie6 下无效果 */
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+q:before, q:after {
+  content: '';
+}
+
+/* 重置表单元素 */
+legend {
+  color: #000;
+}
+
+/* for ie6 */
+fieldset, img {
+  border: none;
+}
+
+/* img 搭车：让链接里的 img 无边框 */
+/* 注：optgroup 无法扶正 */
+button, input, select, textarea {
+  font-size: 100%;
+  /* 使得表单元素在 ie 下能继承字体大小 */
+}
+
+/* 重置表格元素 */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* 重置 hr */
+hr {
+  border: none;
+  height: 1px;
+}
+
+/* 让非ie浏览器默认也显示垂直滚动条，防止因滚动条引起的闪烁 */
+html {
+  overflow-y: scroll;
+}
