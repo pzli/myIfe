@@ -294,7 +294,7 @@
   height: 460px;
 }
 .container main .section-six .left {
-  width: 65%;
+  width: 66%;
   height: 460px;
   background: url("../images/pic1.png") no-repeat;
   background-size: cover;
@@ -337,7 +337,7 @@
 }
 .container main .section-six .right {
   float: right;
-  width: 35%;
+  width: 34%;
 }
 .container main .section-six .right div {
   width: 300px;
@@ -366,6 +366,12 @@
   font: 14px "microsoft yahei";
   color: #c92e35;
   line-height: 30px;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
+.container main .section-six .right .button:hover {
+  color: #fff;
+  background-color: #c92e35;
 }
 .container main .section-six .right .list {
   margin-top: 30px;
@@ -387,10 +393,98 @@
 .container main .section-seven {
   width: 100%;
   min-width: 1280px;
+  height: 520px;
 }
-.container main .section-seven .wrapper {
+.container main .section-seven .wrap {
   width: 66%;
   float: left;
+  height: 100%;
+}
+.container main .section-seven .wrap .cell {
+  width: 50%;
+  float: left;
+  height: 100%;
+}
+.container main .section-seven .wrap .cell .intro {
+  text-align: center;
+  padding-top: 200px;
+}
+.container main .section-seven .wrap .cell .intro p {
+  font: 22px "microsoft yahei";
+  color: #fff;
+}
+.container main .section-seven .wrap .cell .intro p:first-of-type {
+  margin-bottom: 5px;
+}
+.container main .section-seven .wrap .cell .intro span {
+  margin-top: 30px;
+  display: inline-block;
+  width: 30px;
+  height: 2px;
+  background-color: #FFF;
+  transition: width 0.4s ease-in-out;
+}
+.container main .section-seven .wrap .cell .button {
+  width: 150px;
+  height: 40px;
+  margin: 0 auto;
+  margin-top: 50px;
+  border: 1px solid #fff;
+  text-align: center;
+  color: #fff;
+  font: 18px "microsoft yahei";
+  line-height: 40px;
+  background-color: #E84E4C;
+  cursor: pointer;
+  transition: background-color 0.4s ease-in-out,  color 0.4s ease-in-out;
+}
+.container main .section-seven .wrap .cell .button:hover {
+  background-color: #FFF;
+  color: #E84E4C;
+}
+.container main .section-seven .wrap .cell:first-of-type {
+  background-color: #E84E4C;
+}
+.container main .section-seven .wrap .cell:last-of-type {
+  background-color: #FFF;
+}
+.container main .section-seven .wrap .cell:last-of-type p {
+  color: #333;
+}
+.container main .section-seven .wrap .cell:last-of-type span {
+  background-color: #ccc;
+}
+.container main .section-seven .wrap .cell:last-of-type .button {
+  background-color: #FFF;
+  color: #E84E4C;
+  border-color: #E84E4C;
+}
+.container main .section-seven .wrap .cell:last-of-type .button:hover {
+  background-color: #E84E4C;
+  color: #fff;
+}
+.container main .section-seven .wrap .cell:hover span {
+  width: 200px;
+}
+.container main .section-seven .img {
+  float: left;
+  background: url("../images/life.jpg") no-repeat;
+  width: 34%;
+  height: 100%;
+  background-size: cover;
+  position: relative;
+}
+.container main .section-seven .img::after {
+  content: "";
+  position: absolute;
+  border-width: 30px;
+  border-style: solid;
+  border-color: transparent transparent transparent #fff;
+  top: 230px;
+  left: 0;
+}
+.container main .section-eight {
+  height: 1000px;
 }
 
 @charset "UTF-8";

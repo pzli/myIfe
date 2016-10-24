@@ -399,7 +399,7 @@
 
 			.left {
 
-				width: 65%;
+				width: 66%;
 			    height: 460px;
 				background: url("../images/pic1.png") no-repeat;
 				background-size: cover;
@@ -454,7 +454,7 @@
 
 			.right {
 				float: right;
-				width: 35%;
+				width: 34%;
 
 				div {
 					width: 300px;
@@ -489,6 +489,13 @@
 					font: 14px "microsoft yahei";
 					color: #c92e35;
 					line-height: 30px;
+					cursor: pointer;
+					transition: all 0.4s ease-in-out;
+
+					&:hover {
+						color: #fff;
+						background-color: #c92e35;
+					}
 				}
 
 				.list {
@@ -516,12 +523,113 @@
 		.section-seven {
 			width: 100%;
 			min-width: 1280px;
-			.wrapper {
+			height: 520px;
+			.wrap {
 				width: 66%;
 				float: left;
+				height: 100%;
+				.cell {
+					width: 50%;
+					float: left;
+					height: 100%;
+					.intro {
+						text-align: center;
+						padding-top: 200px;
+
+						p {
+							font: 22px "microsoft yahei";
+							color: #fff;
+							&:first-of-type {
+								margin-bottom: 5px;
+							}
+
+						}
+						span {
+							margin-top: 30px;
+							display: inline-block;
+							width: 30px;
+							height: 2px;
+							background-color: #FFF;
+							transition: width 0.4s ease-in-out;
+						}
+
+					} 
+					.button {
+						width: 150px;
+						height: 40px;
+						margin: 0 auto;
+						margin-top: 50px;
+						border: 1px solid #fff;
+						text-align: center;
+						color: #fff;
+						font: 18px "microsoft yahei";
+						line-height: 40px;
+						background-color: #E84E4C;
+						cursor: pointer;
+						transition: background-color 0.4s ease-in-out,  color 0.4s ease-in-out;
+
+
+						&:hover {
+							background-color: #FFF;
+							color: #E84E4C;
+						}
+					}
+					&:first-of-type {
+						background-color: #E84E4C;
+
+
+					}
+					&:last-of-type {
+						background-color: #FFF;
+						p {
+							color: #333;
+						}
+						span {
+							background-color: #ccc;
+						}
+
+						.button {
+							background-color: #FFF;
+							color: #E84E4C;
+							border-color: #E84E4C;
+
+							&:hover {
+								background-color: #E84E4C;
+								color: #fff;
+							}
+						}
+
+					}
+
+					&:hover span {
+						width: 200px;
+					}
+				}
+			}
+			.img {
+				float: left;
+				background: url("../images/life.jpg") no-repeat;
+				width: 34%;
+				height: 100%;
+				background-size: cover;
+				position: relative;
+
+				&::after {
+					content: "";
+					position: absolute;
+					border-width: 30px;
+					border-style: solid;
+					border-color: transparent transparent transparent #fff;
+					top: 230px;
+					left: 0;
+				}
 			}
 		}
 
+
+		.section-eight {
+			height: 1000px;
+		}
 
 	}
 
