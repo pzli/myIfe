@@ -20,15 +20,31 @@
   在事件处理函数中
   获取aqi-input输入的值，并显示在aqi-display中
   */
-  
+
+  // 用HTML5的querySelector()
   var input = document.querySelector("#aqi-input");
   var span = document.querySelector("#aqi-display");
   var btn = document.querySelector('#button');
 
+  var handler = function() {
+    var input_val = parseInt(input.value);
+    if(isNaN(input_val) || input_val <= 0 || input_val >= 1000) {
+      span.innerHTML = "请输入符合规范的数字(0-1000)";
+    } else {
+      span.innerHTML = input_val;
+    }
+  }
+
   btn.addEventListener("click", function() {
-    var input_val = input.value;
-    span.innerHTML = input_val;
+    handler();
   }, false);
+  input.addEventListener("keyup",function(e) {
+    if(e.keyCode == "13") {
+      handler();
+    }
+  }, false);
+
+
 
 
 })(document);
