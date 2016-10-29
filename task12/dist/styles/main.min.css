@@ -1,0 +1,117 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+
+table {
+  width: 300px;
+  margin-bottom: 20px;
+}
+table thead th {
+  background-color: #000;
+  color: #fff;
+  text-align: left;
+}
+table tbody tr:nth-of-type(odd) td {
+  background-color: #fff;
+}
+table tbody tr:nth-of-type(even) td {
+  background-color: #888;
+}
+table tbody tr:nth-of-type(-n+3) td {
+  color: red;
+}
+
+input {
+  display: inline-block;
+  width: 100px;
+  border: 2px solid #ddd;
+  transition: width,border 0.5s ease-in-out;
+  margin: 0 auto;
+}
+input:focus {
+  width: 200px;
+  border: 2px solid blue;
+}
+
+.banner {
+  width: 300px;
+  height: 200px;
+  position: relative;
+  background-color: red;
+  margin: 0 auto;
+  margin-top: 20px;
+  overflow: hidden;
+}
+.banner .sliders {
+  width: 300px;
+  height: 200px;
+  list-style: none;
+  position: absolute;
+  animation: init 0.5s linear;
+  /* 确保在刚加载页面的时候不会出现偏移 */
+}
+.banner .sliders li {
+  width: 300px;
+  height: 200px;
+  display: block;
+  position: absolute;
+  left: -100%;
+  animation: out 0.5s linear;
+}
+.banner .sliders li:target {
+  left: 0;
+  animation: in 0.5s linear;
+}
+.banner .sliders #slider-1 {
+  background-color: red;
+}
+.banner .sliders #slider-2 {
+  background-color: green;
+}
+.banner .sliders #slider-3 {
+  background-color: blue;
+}
+@keyframes init {
+  from {
+    left: -100%;
+  }
+  to {
+    left: 0%;
+  }
+}
+@keyframes in {
+  from {
+    left: 100%;
+  }
+  to {
+    left: 0%;
+  }
+}
+@keyframes out {
+  from {
+    left: 0%;
+  }
+  to {
+    left: -100%;
+  }
+}
+.banner .btns {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.banner .btns a {
+  display: block;
+  float: left;
+  width: 30px;
+  height: 30px;
+  background-color: rgba(255, 255, 255, 0.5);
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  line-height: 30px;
+  margin-left: 1px;
+  z-index: 1001;
+}
