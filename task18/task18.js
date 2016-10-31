@@ -13,12 +13,18 @@
 	var arr = [];
 	// 4个button函数,每次点击按钮后,重新渲染页面
 	leftIn.addEventListener("click",function(){
-		isNum(parseInt(text.value));
+		if(isNaN(text.value)) {
+			alert("只能输入一个数字");
+			return;
+		}
 		arr.unshift(text.value);
 		render();
 	},false);
 	rightIn.addEventListener("click",function(){
-		isNum(parseInt(text.value));
+		if(isNaN(text.value)) {
+			alert("只能输入一个数字");
+			return;
+		}
 		arr.push(text.value);
 		render();
 	},false);
@@ -41,14 +47,6 @@
 			render();
 		}
 	},false);
-
-	// 判断输入文本的合法性
-	function isNum(num){
-		if(isNaN(num)) {
-			alert("只能输入一个数字");
-			return;
-		}
-	}
 
 	// 渲染函数,将数组中的数字渲染到wrap中
 	function render(){
