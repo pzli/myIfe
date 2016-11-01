@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>task_2_20</title>
+	<style>
+		textarea {
+			resize: none;
+		}
+
+		.wrap {
+			padding: 10px;
+			margin-top: 10px;
+		}
+
+		.wrap span {
+			display: block;
+			float: left;
+			width: 50px;
+			height: 50px;
+			margin-right: 10px;
+			margin-bottom: 10px;
+			background-color: red;
+			color: #fff;
+			line-height: 50px;
+			text-align: center;
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+	<textarea id="text" cols="30" rows="10"></textarea>
+	<button id="addMore">批量增加</button>
+	<button id="left-in">左侧入</button>
+	<button id="right-in">右侧入</button>
+	<button id="left-out">左侧出</button>
+	<button id="right-out">右侧出</button>
+	<br>
+	<input type="text" id="search">
+	<button id="search-btn">查询</button>
+	<div class="wrap">
+	</div>
+	<script src="task20.js"></script>
+</body>
+</html>
