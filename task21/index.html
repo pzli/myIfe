@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>task_2_21</title>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+		}
+		textarea
+		,input {
+			border: 1px solid #00DDDD;
+			width: 250px;
+			height: 50px;
+			padding: 10px;
+			border-radius: 10px;
+			color: #00DDDD;
+			margin: 20px;
+		}
+
+		textarea {
+			/* 将右侧的滑动栏消除 */
+			clear: both;
+			overflow: hidden;
+			max-height: 50px;
+			max-width: 250px;
+			float: left;
+		}
+
+		button {
+			display: block;
+			width: 70px;
+			height: 70px;
+			border-radius: 35px;
+			float: left;
+			margin: 10px;
+			margin-top: 20px;
+			background-color: #fff;
+			color: #00DDDD;
+		}
+
+		button:hover {
+			background-color: #00DDDD;
+			color: #fff;
+		}
+		.clearfix {
+			overflow:auto;
+			_height:1%
+		}
+		.tagContainer
+		,.hobbyContainer {
+			clear: both;
+			padding: 10px;
+		}
+
+		.tagContainer span
+		,.hobbyContainer span {
+			display: block;
+			float: left;
+			width: 150px;
+			height: 150px;
+			margin-right: 10px;
+			margin-bottom: 10px;
+			background-color: #fff;
+			color: #00DDDD;
+			line-height: 150px;
+			text-align: center;
+			cursor: pointer;
+			border-radius: 75px;
+			border: 1px solid #00DDDD;
+		}
+
+		.tagContainer span:hover
+		,.hobbyContainer span:hover {
+			background-color: #00DDDD;
+			color: #fff;
+		}
+
+
+	</style>
+</head>
+<body>
+	<!-- 上方的tag部分 -->
+	<input type="text" id="tag" value="nodejs">
+	<div class="tagContainer clearfix"></div>
+		
+	<!-- 下方的爱好部分 -->
+	<textarea id="text" id="hobby">
+		HTML,CSS,JAVASCRIPT,NODEJS,WEBPACK,REACT,VUE,GULP,LESS,SASS
+	</textarea>
+	<button>确认添加爱好</button>
+	<div class="hobbyContainer clearfix"></div>
+	<!-- <textarea id="text" cols="30" rows="10"></textarea>
+	<button id="addMore">批量增加</button>
+	<button id="left-in">左侧入</button>
+	<button id="right-in">右侧入</button>
+	<button id="left-out">左侧出</button>
+	<button id="right-out">右侧出</button>
+	<br>
+	<input type="text" id="search">
+	<button id="search-btn">查询</button>
+	<div class="wrap">
+	</div> -->
+	<script src="task21.js"></script>
+</body>
+</html>
