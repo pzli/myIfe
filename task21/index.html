@@ -69,6 +69,9 @@
 			cursor: pointer;
 			border-radius: 75px;
 			border: 1px solid #00DDDD;
+			overflow: hidden;
+			text-overflow: ellipsis;/*文字隐藏后添加省略号*/
+		    white-space: nowrap;/*强制不换行*/
 		}
 
 		.tagContainer span:hover
@@ -86,22 +89,12 @@
 	<div class="tagContainer clearfix"></div>
 		
 	<!-- 下方的爱好部分 -->
-	<textarea id="text" id="hobby">
+	<textarea type="text" id="hobby">
 		HTML,CSS,JAVASCRIPT,NODEJS,WEBPACK,REACT,VUE,GULP,LESS,SASS
 	</textarea>
 	<button id="btn">确认添加爱好</button>
 	<div class="hobbyContainer clearfix"></div>
-	<!-- <textarea id="text" cols="30" rows="10"></textarea>
-	<button id="addMore">批量增加</button>
-	<button id="left-in">左侧入</button>
-	<button id="right-in">右侧入</button>
-	<button id="left-out">左侧出</button>
-	<button id="right-out">右侧出</button>
-	<br>
-	<input type="text" id="search">
-	<button id="search-btn">查询</button>
-	<div class="wrap">
-	</div> -->
+
 	<script src="task21.js"></script>
 </body>
 </html>
