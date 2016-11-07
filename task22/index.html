@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>JavaScript和树（一）</title>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			background-color: #fff;
+		}
+		.one {
+			display: flex;
+			justify-content: space-between;
+			width: 1000px;
+			height: 300px;
+			padding: 20px;
+			border: 1px solid #FF0000;
+			margin: 100px auto;
+		}
+		.two {
+			display: flex;
+			justify-content: space-between;
+			width: 450px;
+			height: 260px;
+			padding: 20px;
+			border: 1px solid #00DDDD;
+		}
+		.three {
+			display: flex;
+			justify-content: space-between;
+			width: 175px;
+			height: 220px;
+			padding: 20px;
+			border: 1px solid #FF9912;
+		}
+		.four {
+			display: flex;
+			justify-content: space-between;
+			width: 35px;
+			height: 180px;
+			padding: 20px;
+			border: 1px solid #696969;
+		}
+		.btnWrap {
+			display: flex;
+			justify-content: space-between;
+			width: 1000px;
+			height: 40px;
+			margin: 0 auto;
+		}
+
+		button {
+			display: block;
+			width: 200px;
+			float: left;
+		}
+	</style>
+</head>
+<body>
+	<div class="one">
+		<div class="two">
+			<div class="three">
+				<div class="four"></div>
+				<div class="four"></div>
+			</div>
+			<div class="three">
+				<div class="four"></div>
+				<div class="four"></div>
+				</div>
+		</div>
+		<div class="two">
+			<div class="three">
+				<div class="four"></div>
+				<div class="four"></div>
+			</div>
+			<div class="three">
+				<div class="four"></div>
+				<div class="four"></div>
+			</div>
+		</div>
+	</div>
+	<div class="btnWrap">
+		<button id="preorder">前序遍历</button>
+		<button id="inorder">中序遍历</button>
+		<button id="postorder">后序遍历</button>
+	</div>
+	
+	<script src="app.js"></script>
+</body>
+</html>
